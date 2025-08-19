@@ -43,6 +43,6 @@ jobs:
           script: |
             cd ~/node-actions-demo
             git pull
-            npm install --production
+            npm install
             npm run build
             pm2 restart actions-demo || pm2 start dist/index.js --name actions-demo
